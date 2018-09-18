@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  let url =
-    "https://spreadsheets.google.com/feeds/list/1B5MgCuTzL0Br5K8ZXXVAnwPb6qCXtwZegRIyr1aRmuQ/od6/public/values?alt=json";
+  let spreadsheetID = "1B5MgCuTzL0Br5K8ZXXVAnwPb6qCXtwZegRIyr1aRmuQ";
+  let url = `https://spreadsheets.google.com/feeds/list/${spreadsheetID}/od6/public/values?alt=json`;
 
   fetch(url)
     .then(resp => resp.json())
