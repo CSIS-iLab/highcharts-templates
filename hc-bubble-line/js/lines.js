@@ -1,12 +1,12 @@
-getBubbleData(1, "<5 vitamin A supplements");
-getBubbleData(2, "<5 nutrition programs");
-getBubbleData(3, "<5 nutrition-specific interventions");
+getBubbleData(3, "<5 vitamin A supplements");
+getBubbleData(4, "<5 nutrition programs");
+getBubbleData(5, "<5 nutrition-specific interventions");
 
 function getBubbleData(id, title) {
   var categories = [];
   Highcharts.data({
     googleSpreadsheetKey: "1RXsxwg_tns3CICc1ZyYX3PEucq_RVMPDihn2y1Xs5jk",
-    googleSpreadsheetWorksheet: 4,
+    googleSpreadsheetWorksheet: 6,
     switchRowsAndColumns: true,
     parsed: function(columns) {
       var data = {};
@@ -104,7 +104,7 @@ function makeLineChart(i, title, bubbleSeries) {
     },
     chart: {
       zoomType: false,
-      height: "40%"
+      height: "100%"
     },
     title: {
       align: "left",
@@ -157,9 +157,6 @@ function makeLineChart(i, title, bubbleSeries) {
           radius: 3
         },
         lineWidth: 3
-      },
-      bubble: {
-        minSize: 2
       }
     }
   });
