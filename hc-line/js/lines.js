@@ -1,6 +1,4 @@
-
-$(function() {
-  $('#hcContainer').highcharts({
+Highcharts.chart('hcContainer', {
     // Load Data in from Google Sheets
     data: {
       googleSpreadsheetKey: '1T98pKXiTxv7I3CNrR95lqR_lybe2NrS0ri601Mm20e4',
@@ -51,5 +49,4 @@ $(function() {
         lineWidth: 3
       }
     }
-  });
-});
+  })
