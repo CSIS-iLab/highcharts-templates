@@ -11,26 +11,25 @@ Highcharts.chart('hcContainer', {
     // colors: Highcharts.getOptions().colors,
     // Chart Title and Subtitle
     title: {
-      text: 'Sources of Inbound Students to Taiwan, 2015-2016'
+      text: 'Interactive Title'
     },
     // Credits
     credits: {
       enabled: true,
-      href: 'https://ois.moe.gov.tw/fs/html/Statistics.html',
+      href: false,
       text:
-        'CSIS China Power Project | Source: "104大專校院境外學生人數統計" [ 2015 Foreign College and University Students Statistics (104 dazhuan xiaoyuan jingwai xuesheng renshu tongji)], Ministiry of Education, ROC (Taiwan)'
+        'CSIS Project Name : Source: NAME'
     },
     // Chart Legend
-    legend: {
-      align: 'right',
-      verticalAlign: 'bottom',
-      layout: 'vertical'
-    },
-    xAxis: {},
+    // legend: {
+    //   align: 'center',
+    //   verticalAlign: 'bottom',
+    //   layout: 'horizontal'
+    // },
     // Y Axis
     yAxis: {
       title: {
-        text: 'Millions'
+        text: 'Y Axis Title'
       }
       // labels: {
       //   format: "${value}"
@@ -67,23 +66,4 @@ Highcharts.chart('hcContainer', {
         innerSize: '70%'
       }
     ],
-    responsive: {
-      rules: [
-        {
-          condition: {
-            maxWidth: 600,
-            minWidth: 200
-          },
-          chartOptions: {
-            plotOptions: {
-              pie: {
-                dataLabels: {
-                  distance: -20
-                }
-              }
-            }
-          }
-        }
-      ]
-    }
   })
